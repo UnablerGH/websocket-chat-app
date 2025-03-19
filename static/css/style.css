@@ -1,0 +1,31 @@
+.chat-container {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .message {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+  }
+  
+  .sent {
+    background-color: #d1e7dd;
+    margin-left: auto;
+    text-align: right;
+  }
+  
+  .received {
+    background-color: #f8d7da;
+    margin-right: auto;
+    text-align: left;
+  }
+  
+  .notification {
+    text-align: center;
+    color: gray;
+    font-style: italic;
+  }
+  

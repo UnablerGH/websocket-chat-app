@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FastAPI WebSocket Chat</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<div class="container chat-container mt-4">
+  <h2>FastAPI WebSocket Chat</h2>
+  <div id="login">
+    <div class="mb-3">
+      <input type="text" id="nickname" class="form-control" placeholder="Wprowadź pseudonim">
+    </div>
+    <div class="mb-3">
+      <input type="text" id="room" class="form-control" placeholder="Nazwa pokoju">
+    </div>
+    <button id="connectBtn" class="btn btn-primary mb-3">Połącz</button>
+  </div>
+  
+  <div id="chat" style="display:none;">
+    <div id="chat-box" style="height:400px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;"></div>
+    <div id="typingIndicator" class="mb-2"></div>
+    <form id="messageForm">
+      <div class="mb-3">
+        <input type="text" id="messageInput" class="form-control" placeholder="Wpisz wiadomość">
+      </div>
+      <div class="mb-3">
+        <input type="file" id="imageInput" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-success">Wyślij</button>
+    </form>
+  </div>
+</div>
+<script src="/static/js/chat.js"></script>
+</body>
+</html>
